@@ -1,0 +1,21 @@
+{
+    "name": "Logger",
+    "version": "1.0.0",
+    "description": "Data logger for Arduino frameworks. You can prepend or append the log as needed. You may also log to SD or others.",
+    "keywords": "log, logger, logging, debug, debugger, debugging",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/shah253kt/"
+    },
+    "authors": [
+        {
+            "name": "Ahmad Shahril",
+            "url": "https://github.com/shah253kt",
+            "maintainer": true
+        }
+    ],
+    "license": "MIT",
+    "homepage": "https://github.com/shah253kt/",
+    "frameworks": "arduino",
+    "platforms": "espressif32"
+}
