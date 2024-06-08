@@ -5,7 +5,7 @@
     "keywords": "log, logger, logging, debug, debugger, debugging",
     "repository": {
         "type": "git",
-        "url": "https://github.com/shah253kt/"
+        "url": "https://github.com/shah253kt/Logger"
     },
     "authors": [
         {
@@ -15,7 +15,7 @@
         }
     ],
     "license": "MIT",
-    "homepage": "https://github.com/shah253kt/",
+    "homepage": "https://github.com/shah253kt/Logger",
     "frameworks": "arduino",
     "platforms": "espressif32"
 }
