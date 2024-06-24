@@ -1,6 +1,6 @@
 #include "Log.h"
 
-#include <cstring>
+#include "Arduino.h"
 
 Log::Log(Level level, const char *data) : m_level(level), m_data(strdup(data))
 {
@@ -10,8 +10,8 @@ Log::Log(Level level, char *data) : m_level(level)
 {
     if (data)
     {
-        m_data = new char[std::strlen(data) + 1];
-        std::strcpy(m_data, data);
+        m_data = new char[strlen(data) + 1];
+        strcpy(m_data, data);
     }
 }
 
@@ -19,8 +19,8 @@ Log::Log(const Log &other) : m_level(other.level())
 {
     if (other.data())
     {
-        m_data = new char[std::strlen(other.data()) + 1];
-        std::strcpy(m_data, other.data());
+        m_data = new char[strlen(other.data()) + 1];
+        strcpy(m_data, other.data());
     }
 }
 
@@ -41,8 +41,8 @@ Log &Log::operator=(const Log &other)
     m_level = other.level();
     if (other.data())
     {
-        m_data = new char[std::strlen(other.data()) + 1];
-        std::strcpy(m_data, other.data());
+        m_data = new char[strlen(other.data()) + 1];
+        strcpy(m_data, other.data());
     }
     else
     {

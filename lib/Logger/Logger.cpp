@@ -1,7 +1,5 @@
 #include "Logger.h"
 
-#include "SafeString.h"
-
 namespace
 {
     constexpr auto MAX_LOG_LENGTH = 15;
@@ -114,7 +112,7 @@ void Logger::log(Log::Level level, char *data)
         strcat(dataToLog, ",");
         strcat(dataToLog, appendLog());
     }
-    
+
     strcat(dataToLog, "\n");
 
     if (m_printToSerial)

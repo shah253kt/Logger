@@ -17,7 +17,7 @@ public:
 
     void info(char *data);
     void info(const char *data);
-    
+
     void success(char *data);
     void success(const char *data);
 

@@ -1,6 +1,6 @@
 {
     "name": "Logger",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Data logger for Arduino frameworks. You can prepend or append the log as needed. You may also log to SD or others.",
     "keywords": "log, logger, logging, debug, debugger, debugging",
     "repository": {
