@@ -100,11 +100,11 @@ void Logger::log(Log::Level level, char *data)
 
     if (prependLog == nullptr)
     {
-        sprintf(dataToLog, "%dms,%s,%s", millis(), levelStr, data);
+        sprintf(dataToLog, "%ldms,%s,%s", millis(), levelStr, data);
     }
     else
     {
-        sprintf(dataToLog, "%s,%dms,%s,%s", prependLog(), millis(), levelStr, data);
+        sprintf(dataToLog, "%s,%ldms,%s,%s", prependLog(), millis(), levelStr, data);
     }
 
     if (appendLog != nullptr)
